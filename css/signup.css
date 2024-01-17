@@ -1,0 +1,40 @@
+.signup{
+    padding-left: 30%;
+    padding-right: 30%;
+
+}
+
+h1{
+text-align: center;
+}
+
+.block{
+  width: 15%;
+  margin-left: 42%;
+}
+
+
+input[type=date],input[type=text],input[type=password], input[type=email], select{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 9px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 200px;
+  box-sizing: border-box;
+}
+
+
+.info{
+overflow:auto;
+}
+
+.login_info{
+float:left;
+width: 40%;
+}
+
+.personal_info{
+float:right;
+width: 40%;
+}

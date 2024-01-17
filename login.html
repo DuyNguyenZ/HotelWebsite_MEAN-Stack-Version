@@ -1,0 +1,61 @@
+<!-- Duy Nguyen Part 4_as3 -->
+
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaiGon Hotel</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <link rel="stylesheet" type="text/css" href="css/style-Arrangement.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="Login.js"></script>
+</head>
+<body ng-controller="LoginController">
+
+    <header class="header">
+        <a href="index.html">
+            <img class="logo" src="images/SaiGonHotel.png" alt="SaiGon Hotel">
+        </a>
+    </header>
+
+    <form ng-submit="login()" name="loginForm">
+        <div class="login">
+            <h1 class="heading">Sign In</h1>
+            <div class="login_info">
+                <p>{{message}}</p>
+                <label for="email"><b>Email</b></label>
+                <br>
+                <input type="email" placeholder="Enter Email" ng-model="email" name="email" id="email" required>
+                <br>
+                <label for="psw"><b>Password</b></label>
+                <br>
+                <input type="password" placeholder="Enter Password" ng-model="password" name="psw" id="psw" required>
+                <br>
+                <a href="signUp.html" style="padding-left: 19%;">Create Account</a>
+                <br>
+                <br>
+            </div>
+            <button type="submit" name="login" class="w3-button block w3-black w3-margin-bottom">Sign In</button>
+            <br>
+            <br>
+        </div>
+    </form>
+
+    <footer class="footer">
+        <div class="us">
+            <p class="bold">About Us</p>
+            <p>We are in top 5 hotels in HCM city. With high quality service, we hope you will have a nice trip with us.</p>
+        </div>
+        <div class="mContact">
+            <p class="bold">Contact</p>
+            <p>764 Trần Hưng Đạo, P.7, Q.5 TPHCM</p>
+            <p>Phone: 0909.534.678</p>
+            <p>Email: Saigonhotel@gmail.com</p>
+        </div>
+        <br/>
+    </footer>
+</body>
+</html>

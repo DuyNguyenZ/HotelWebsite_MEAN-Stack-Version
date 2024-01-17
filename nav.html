@@ -1,0 +1,37 @@
+<!-- Duy Nguyen Part 4_as3 -->
+
+<div  ng-controller="UserController">
+    <div class="dropdown" ng-if="loggedin">
+        <img src="images/user.png" style="width: 35px; height: 35px; margin-left: 10px; margin-bottom: 5px;">
+        <button class="dropbtn">{{ username }}</button>
+        <div class="dropdown-content">
+            <a href="booking_check.html">Booking Check</a>
+            <a href="#" ng-click="logout()">Log Out</a>
+        </div>
+    </div>
+
+    <a href="Login.html" ng-if="!loggedin" class="w3-button">Login</a>
+    <a href="signUp.html" ng-if="!loggedin" class="w3-button">Sign Up</a> 
+
+
+    <header class="header">
+        <a href="index.html">
+            <img class="logo" src="images/SaiGonHotel.png" alt="SaiGon Hotel">
+        </a>
+        <nav class="nav">
+            <div>
+                <ul>
+                    <li class="list"><a href="index.html">Home</a></li>
+                    <li class="list"><a href="explore.html">Explore</a></li>
+                    <li class="list"><a href="rooms.html">Rooms</a></li>
+                    <li class="list">
+                        <a href="Booking.html" ng-if="loggedin">Booking</a>
+                        <a href="login.html" ng-if="!loggedin">Booking</a>
+                    </li>
+                    <li class="list"><a href="Gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>    
+            </div>
+        </nav>
+    </header>
+</div>

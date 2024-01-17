@@ -1,0 +1,128 @@
+<!-- Duy Nguyen Part 4_as3 -->
+
+<html  ng-app="myApp">
+<head> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">	
+    <title> SaiGon Hotel</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/confirm_booking.css">
+    <link rel="stylesheet" type="text/css" href="css/style-Arrangement.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="nav.js"></script>
+    <script src="confirm_booking.js"></script>
+</head>
+  
+
+<body ng-controller="BookingController">
+
+    <div ng-include="'nav.html'"></div>
+
+    <h1 class="heading">Booking Confirm</h1>
+    <div class="booking">
+        <div class="booking_detail">
+            <br>
+            <h2 class="heading">Booking Details</h2>
+
+            <div class="detail">
+                <p class="w3-large">Check-in</p>
+                <p class="w3-large"><strong>&emsp; &ensp; {{ arrive }}</strong></p>
+            </div>
+
+            <br>
+            <div class="detail">
+                <p class="w3-large">Check-out</p>
+                <p class="w3-large"><strong>&emsp; {{ depart }}</strong></p>
+            </div>
+
+            <br>
+            <div class="detail">
+                <p class="w3-large">Guest</p>
+                <p class="w3-large"><strong>&emsp; &emsp; &ensp;{{ person }} customers</strong></p>
+            </div>
+
+            <br>
+            <div class="detail">
+                <p class="w3-large">Unit</p>
+                <p class="w3-large"><strong>&emsp; &emsp; &ensp; &ensp;{{ room_name }}</strong></p>
+            </div>
+        </div>
+
+        <br>
+        <h2 class="heading">Booked By</h2>
+
+        <div class="other_info">
+            <div class="customer_info">
+                <p class="w3-large">{{ customer_name }}</p>
+                <br>
+                <p class="w3-large">{{ customer_email }}</p>
+                <br>
+                <p class="w3-large">{{ customer_phone }}</p>
+                <br>
+            </div>
+
+            <div class="booking_date">
+                <div class="detail">
+                    <p class="w3-large">Booking Date:</p>
+                    <p class="w3-large">&ensp; {{ booking_date }}</p>
+                </div>
+
+                <br>
+                <div class="detail">
+                    <p class="w3-large">Status:</p>
+                    <p class="w3-large">&ensp; Draft</p>
+                </div>
+            </div>
+        </div>
+
+        <table>
+            <tr>
+                <th class="main_column" id="column1"><strong>Description</strong></th>
+                <th class="main_column" id="column2"><strong>Amount</strong></th>
+            </tr>
+
+            <tr>
+                <td id="column1">{{ stay_days }} x Nights ($ {{ room_price }}.00)</td>
+                <td id="column2">$ {{ total_money }}.00</td>
+            </tr>
+
+            <tr>
+                <td class="total_column" id="total"><strong>Total</strong></td>
+                <td class="total_column" id="column2"><strong>$ {{ total_money }}.00</strong></td>
+            </tr>
+        </table>
+
+        <br>
+        <h2 class="heading">Additional Information</h2>
+        <p class="w3-large">Check in from 1 PM</p>
+        <br>
+        <p class="w3-large">Check out until 11 AM</p>
+        <br>
+        <br>
+        <br>
+
+        <div class="confirm_btn">
+            <form ng-submit="BookedBooking()" >
+                <input type="submit" value="Confirm" class="w3-button block w3-black w3-margin-bottom" name="Booked">
+            </form>
+        </div>
+    </div> 
+
+    <footer class="footer">
+        <div class="us">
+        <p class="bold">About Us</p>
+        <p>We are in top 5 hotels in HCM city. With high quality service, we hope you will have a nice trip with us.</p>    
+        </div>
+        <div class="mContact">
+        <p class="bold">Contact</p>
+        <p>764 Trần Hưng Đạo,P.7,Q.5 TPHCM</p>
+        <p> Phone : 0909.534.678</p>
+        <p>  Email : Saigonhotel@gmail.com</p>    
+        </div>
+        <br/>
+    </footer>   
+
+
+</body>    
+</html>

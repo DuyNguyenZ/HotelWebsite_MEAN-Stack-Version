@@ -1,0 +1,90 @@
+<!-- Duy Nguyen Part 4_as3 -->
+
+<html ng-app="myApp">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">	
+    <title> SaiGon Hotel</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/booking.css">
+    <link rel="stylesheet" type="text/css" href="css/style-Arrangement.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="nav.js"></script>   
+    <script src="Booking.js"></script>         
+</head>
+    
+<body>
+  
+<div ng-include="'nav.html'"></div>
+
+     
+<article  ng-controller="BookingController">
+  <form ng-submit="submitBooking()" name="bookingForm">
+    <!-- Day & Time -->
+    <div class="form-group">
+        <br>
+        <h2 class="heading">Day & Time</h2>
+
+        <div class="controls" >
+            <label for="arrive" class="label-date">Arrive</label>
+            <br>
+            <input type="date" id="arrive" class="info" name="arrive" ng-model="booking.arrive"  required min="{{ minArrivalDate | date:'yyyy-MM-dd' }}" ng-change="updateMinDepartureDate()" />
+        </div>
+
+        <div class="controls">
+            <label for="depart" class="label-date">Depart</label>
+            <br>
+            <input type="date" id="depart" class="info" name="depart" ng-model="booking.depart" required min="{{ minDepartureDate | date:'yyyy-MM-dd' }}" />
+        </div>
+
+        <div class="controls">
+            <label for="people">People</label>
+            <br>
+            <select class="info" name="person" ng-model="booking.person" required>
+                <option value=""></option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+        </div>
+
+        <div class="controls">
+            <label for="RoomType">Room</label>
+            <br>
+            <select class="info" name="room_type" ng-model="booking.room_type" required>
+                <option value="Ambsassador Suite">Ambsassador Suite</option>
+                <option value="Junior Suite">Junior Suite</option>
+                <option value="Family Room">Family Room</option>
+                <option value="Premium Suite">Premium Suite</option>
+                <option value="Premium Plus">Premium Plus</option>
+                <option value="V.I.P Room">V.I.P Room</option>
+            </select>
+        </div>
+        <br>
+        <br>
+        <input type="submit" value="Submit" class="w3-button w3-block w3-black w3-margin-bottom" name="room_check">
+    </div>
+  </form>
+</article>
+ 
+
+<footer class="footer">
+  <div class="us">
+  <p class="bold">About Us</p>
+  <p>We are in top 5 hotels in HCM city. With high quality service, we hope you will have a nice trip with us.</p>    
+  </div>
+  <div class="mContact">
+  <p class="bold">Contact</p>
+  <p>764 Tr?n H?ng ??o,P.7,Q.5 TPHCM</p>
+  <p> Phone : 0909.534.678</p>
+  <p>  Email : Saigonhotel@gmail.com</p>    
+  </div>
+  <br/>
+</footer>
+    
+
+
+</body>    
+</html>

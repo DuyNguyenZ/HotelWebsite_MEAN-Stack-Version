@@ -1,0 +1,32 @@
+.login{
+    padding-left: 30%;
+    padding-right: 30%;
+}
+
+h1{
+text-align: center;
+}
+
+
+.block{
+  width: 15%;
+  margin-left: 42%;
+}
+
+
+input[type=password], input[type=email], select{
+  width: 65%;
+  padding: 12px 20px;
+  margin: 9px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 200px;
+  box-sizing: border-box;
+  
+}
+
+.login_info {
+  margin-left: 28%;
+}
+
+

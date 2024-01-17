@@ -1,0 +1,133 @@
+
+/* Explore page */
+
+.main{
+    background: #fff;
+    padding: 2%;
+}
+
+
+
+/* Explore sections */
+
+.exp1, .exp2{
+    background: #fff;
+    
+}
+
+.exp1::after{
+    content:" ";
+    display: block;
+    clear: both;
+}
+
+.exp2::after{
+    content:" ";
+    display: block;
+    clear: both;
+}
+
+
+.exp1 h1{
+    float: right;
+    padding-right: 14%;
+    padding-top: 9%;
+    max-width: 30%;
+    color: black;
+}
+
+.exp1 h2{
+    float: right;
+    padding-right: 16%;
+    padding-top: 9%;
+    max-width: 30%;
+    color: black;
+}
+
+.exp1 p{
+    float: left;
+    text-align: justify ;
+    max-width: 40%;
+    color: black;
+}
+
+.exp1 img{
+    display: block;
+    float: left;
+    max-width: 60%;
+    width: 60%;
+    height: auto;
+    
+}
+
+
+.exp2 h1{
+    float: left;
+    padding-left: 10%;
+    max-width: 30%;
+    padding-top: 9%;
+    color: black;
+}
+
+.exp2 p{
+    float: right;
+    text-align: justify;
+    max-width: 40%;
+    color: black;
+}
+
+.exp2 img{
+    display: block;
+    float: right;
+    max-width: 60%;
+    height: auto;
+    
+}
+
+
+.expsection::after{
+  content: ".";
+     font-size: xx-small;
+    visibility: hidden;
+}
+
+#t
+{
+width:360px;
+height:360px;
+padding-left:20%;
+}
+
+#t2
+{
+ padding-top: 7%;
+ text-align: justify ;
+}
+
+@media only screen and (min-width: 768px){ /* For PC */
+.exp1 h1{font-size: 2em;}
+.exp1 p{font-size: 1.4em;}
+.exp2 h1{font-size: 2em;}
+.exp2 p{font-size: 1.4em;}
+.exp2 img{width: 60%;}
+.exp1 img{width: 60%;}
+}
+
+@media only screen and (min-width: 600px){
+.exp1 h1{font-size: 2em;}
+.exp1 p{font-size: 1.4em;}
+.exp2 h1{font-size: 2em;}
+.exp2 p{font-size: 1.4em;}
+.exp2 img{width: 60%;}
+.exp1 img{width: 60%;}
+}
+
+@media only screen and (max-width: 768px) { /* For mobile phones: */
+.exp1 h1{font-size: 1em;float:none;margin-left:45%}
+.exp1 p{font-size: 1em;float:none;max-width: 100%;}
+.exp2 h1{font-size: 1em;float:none;margin-left:20%}
+.exp2 p{font-size: 1em;float:none;max-width: 100%;}
+.exp2 img{width: 100%;float:none;max-width: 100%;}
+.exp1 img{width: 100%;float:none; max-width: 100%;}
+}
+

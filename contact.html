@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> SaiGon Hotel</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/style-Arrangement.css">
+    <link rel="stylesheet" type="text/css" href="css/contact.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">    
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="nav.js"></script>
+    <script src="contact.js"></script>
+</head>
+  
+<body>
+    
+    <div ng-include="'nav.html'"></div>
+
+    <br><br><br>
+    <div ng-controller="MessageController">
+        <form ng-submit="messageSent()">
+            <p style="margin-left: 23%;">{{message}}</p>
+            <div class="form1">
+                <input type="text" name="name" placeholder="Name" ng-model="name" >  
+                <input type="email" name="email" placeholder="E-mail"  ng-model="email"> 
+                <textarea  placeholder="Your message..." rows="4" ng-model="note"></textarea>
+                <input type="submit" id="sub2" value="Send">
+            </div>
+        </form> 
+    </div>
+             
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.7421217523715!2d106.67437435112872!3d10.75434706250219!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f0277677fe3%3A0xa1bd0ee60ce1501c!2zNzY0IMSQLiBUcuG6p24gSMawbmcgxJDhuqFvLCBQaMaw4budbmcgNywgUXXhuq1uIDUsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgVmlldG5hbQ!5e0!3m2!1sen!2sca!4v1596576341382!5m2!1sen!2sca" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+  
+    <footer class="footer">
+        <div class="us">
+        <p class="bold">About Us</p>
+        <p>We are in top 5 hotels in HCM city. With high quality service, we hope you will have a nice trip with us.</p>    
+        </div>
+        <div class="mContact">
+        <p class="bold">Contact</p>
+        <p>764 Trần Hưng Đạo,P.7,Q.5 TPHCM</p>
+        <p> Phone : 0909.534.678</p>
+        <p>  Email : Saigonhotel@gmail.com</p>    
+        </div>
+        <br/>
+    </footer>    
+</body>    
+</html>
+    

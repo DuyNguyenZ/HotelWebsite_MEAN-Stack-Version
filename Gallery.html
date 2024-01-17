@@ -1,0 +1,63 @@
+
+<!-- Duy Nguyen Part 4_as3 -->
+
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">	
+    <title> SaiGon Hotel</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/gallery.css">
+    <link rel="stylesheet" type="text/css" href="css/style-Arrangement.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script src="js/slide.js" async></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="nav.js"></script>
+
+</head>
+  
+<body>
+    
+  <div ng-include="'nav.html'"></div>
+
+  <div class="slideshow-container">
+
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img src="images/room2.png" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img src="images/room3.png" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img src="images/room1.png" style="width:100%">
+      </div>
+      
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  </div>
+
+
+  <footer class="footer">
+          <div class="us">
+          <p class="bold">About Us</p>
+          <p>We are in top 5 hotels in HCM city. With high quality service, we hope you will have a nice trip with us.</p>    
+          </div>
+          <div class="mContact">
+          <p class="bold">Contact</p>
+          <p>764 Trần Hưng Đạo,P.7,Q.5 TPHCM</p>
+          <p> Phone : 0909.534.678</p>
+          <p>  Email : Saigonhotel@gmail.com</p>    
+          </div>
+          <br/>
+      </footer>
+</body>
+    
+</html>
+    

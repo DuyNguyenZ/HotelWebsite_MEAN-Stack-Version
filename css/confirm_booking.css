@@ -1,0 +1,62 @@
+.booking{
+pdding: 2em;
+padding-right:15%;
+padding-left:30%
+}
+h1{
+text-align: center;
+padding-left: 6%;
+}
+
+.detail{
+ width: 30em; max-width: 100%; 
+}
+.detail p {
+ display: inline-block; max-width: 50%;
+}
+
+.other_info{
+overflow:auto;
+}
+.customer_info{
+float:left;
+}
+
+.booking_date{
+float:right;
+}
+
+table{
+  width: 80%;
+  border: 1px solid;
+}
+
+.main_column{
+background-color: #ADD8E6;
+padding-bottom: 1%;
+padding-top: 1%;
+}
+
+.total_column{
+background-color: #FFFFE0;
+}
+#total{
+padding-left: 65%;
+}
+
+#column1{
+text-align:left ;
+}
+
+#column2{
+text-align: right;
+}
+
+.block{
+  width: 15%;
+}
+
+.confirm_btn{
+text-align: center;
+padding-right: 21%;
+}
